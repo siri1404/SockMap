@@ -1,6 +1,6 @@
 # SockMap v2 - Real-time Socket & Memory Monitoring Dashboard
 
-**SockMap v2** is a badass full-stack monitoring system for Linux systems. It brings socket connections, memory maps, and process activity into one slick, auto-refreshing, browser-based dashboard. Designed with **efficiency**, **clarity**, and **real-time control** in mind.
+**SockMap v2** is a full-stack monitoring system for Linux systems. It brings socket connections, memory maps, and process activity into one slick, auto-refreshing, browser-based dashboard. Designed with **efficiency**, **clarity**, and **real-time control** in mind.
 
 Built with **C**, **Python (Flask)**, and a **React + TypeScript** frontend.  
 Features include full visibility into socket states, memory leaks, and process behavior.
