@@ -29,7 +29,7 @@ export function SocketList({ sockets, isLoading }: SocketListProps) {
 
   if (isLoading) {
     return (
-      <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
+      <div className="bg-black rounded-lg p-8 border border-gray-800">
         <div className="flex items-center justify-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
           <span className="ml-3 text-gray-400">Scanning sockets...</span>
@@ -39,7 +39,7 @@ export function SocketList({ sockets, isLoading }: SocketListProps) {
   }
 
   return (
-    <div className="bg-gray-900 rounded-lg border border-gray-800 overflow-hidden">
+    <div className="bg-black rounded-lg border border-gray-800 overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-800">
         <h3 className="text-lg font-semibold text-white">Socket Connections</h3>
         <p className="text-gray-400 text-sm">Real-time monitoring of active socket connections</p>
@@ -47,7 +47,7 @@ export function SocketList({ sockets, isLoading }: SocketListProps) {
 
       <div className="overflow-x-auto">
         <table className="w-full">
-          <thead className="bg-gray-800">
+          <thead className="bg-gray-900">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">
                 Process

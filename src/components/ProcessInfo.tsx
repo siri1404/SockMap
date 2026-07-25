@@ -20,7 +20,7 @@ export function ProcessInfo({ processes, isLoading }: ProcessInfoProps) {
 
   if (isLoading) {
     return (
-      <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
+      <div className="bg-black rounded-lg p-8 border border-gray-800">
         <div className="flex items-center justify-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
           <span className="ml-3 text-gray-400">Analyzing processes...</span>
@@ -30,7 +30,7 @@ export function ProcessInfo({ processes, isLoading }: ProcessInfoProps) {
   }
 
   return (
-    <div className="bg-gray-900 rounded-lg border border-gray-800 overflow-hidden">
+    <div className="bg-black rounded-lg border border-gray-800 overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-800">
         <h3 className="text-lg font-semibold text-white">Process Overview</h3>
         <p className="text-gray-400 text-sm">Resource usage and socket activity by process</p>
@@ -38,7 +38,7 @@ export function ProcessInfo({ processes, isLoading }: ProcessInfoProps) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 p-6">
         {processes.map((process) => (
-          <div key={process.pid} className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors">
+          <div key={process.pid} className="bg-gray-900 rounded-lg p-6 border border-gray-800 hover:border-gray-700 transition-colors">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
                 <Activity className="w-5 h-5 text-blue-400 mr-2" />

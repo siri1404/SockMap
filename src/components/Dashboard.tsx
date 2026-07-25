@@ -154,9 +154,9 @@ export function Dashboard() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="bg-gray-900 border-b border-gray-800 px-6 py-4">
+      <header className="bg-black border-b border-gray-800 px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Activity className="w-8 h-8 text-blue-400" />

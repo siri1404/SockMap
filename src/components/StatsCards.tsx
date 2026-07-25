@@ -50,7 +50,7 @@ export function StatsCards({ sockets, processes }: StatsCardsProps) {
       {stats.map((stat) => {
         const Icon = stat.icon;
         return (
-          <div key={stat.title} className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+          <div key={stat.title} className="bg-black rounded-lg p-6 border border-gray-800">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-gray-400 text-sm font-medium">{stat.title}</p>
