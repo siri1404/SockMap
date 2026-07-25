@@ -1,5 +1,10 @@
 // API service for communicating with the backend
-const API_BASE_URL = '/api';
+// In production, use the full domain for API calls since Vite proxy won't be available
+const API_BASE_URL = typeof window !== 'undefined' 
+  ? (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ? '/api'
+    : `${window.location.origin}/api`
+  : '/api';
 
 export interface ApiResponse<T> {
   data?: T;
