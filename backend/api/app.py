@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Path to the compiled sockmap binary
-SOCKMAP_BINARY = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'bin', 'sockmap')
+SOCKMAP_BINARY = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src', 'Sockmap')
 
 def run_sockmap_command(args=None):
     """Execute the sockmap binary and return parsed results"""
